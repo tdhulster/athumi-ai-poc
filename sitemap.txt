@@ -1,0 +1,12 @@
+https://www.budgetyourtrip.com/sitemap.xml
+https://www.budgetyourtrip.com/sitemap_https.php
+https://www.budgetyourtrip.com/citycomparisonsitemap.php
+https://www.budgetyourtrip.com/countrycomparisonsitemap.php
+https://www.budgetyourtrip.com/locationaveragehotelcostssitemap.php
+https://www.budgetyourtrip.com/locationaveragehotelthemessitemap.php
+https://www.budgetyourtrip.com/tourssitemap.php
+https://www.budgetyourtrip.com/locationactivities_theme_sitemap.php
+https://www.budgetyourtrip.com/hostelssitemap.php
+https://www.budgetyourtrip.com/famoussitesitemap.php
+https://www.budgetyourtrip.com/itineraryarticlesitemap.php
+https://www.budgetyourtrip.com/blog/sitemap_index.xml
