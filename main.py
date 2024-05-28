@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain_community.document_loaders import SitemapLoader
+from langchain_community.document_loaders import SitemapLoader,WebBaseLoader
 from langchain_community.vectorstores import FAISS
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
@@ -14,6 +14,7 @@ load_dotenv()
 def main():
     llm = ChatOpenAI()
     loader = SitemapLoader("https://www.budgetyourtrip.com/sitemap.xml")
+    loader.session.headers['User-Agent'] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
 
     docs = loader.load()
     print(docs)
