@@ -16,12 +16,13 @@ load_dotenv()
 def main():
     llm = ChatOpenAI(model_name="gpt-4o")
     confluence_api_key = os.environ.get("CONFLUENCE_API_TOKEN")
+    confluence_user_name = os.environ.get("CONFLUENCE_USER_NAME")
     print(confluence_api_key)
     loader = ConfluenceLoader(
         url="https://athumi.atlassian.net/wiki",
-        username="thijs.dhulster",
+        username=confluence_user_name,
         api_key=confluence_api_key,
-        cloud=False
+        # cloud=False
     )
     docs = loader.load(space_key="BURE", include_attachments=True, limit=50)
 

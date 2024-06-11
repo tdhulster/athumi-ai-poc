@@ -20,3 +20,6 @@
 https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/
 
 ## 2 - Copy .env-example to .env and add variables 
+
+## 3 - Install brew dependencies
+`brew install pkg-config cairo pango libpng jpeg giflib librsvg pixman poppler tesseract`
